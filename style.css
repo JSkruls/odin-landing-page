@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 .page_wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    background: #1f2937;
 }
 
 .page_wrapper > * {
@@ -15,6 +20,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 10px 0 0 0;
 }
 
 ul {
@@ -28,16 +34,13 @@ ul {
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 .header p {
     font-size: 24px;
     font-weight: bold;
-    color: f9faf8;
-    margin: 0;
-}
-
-.showcase_text h1, .showcase_text p {
+    color: #f9faf8;
     margin: 0;
 }
 
@@ -50,7 +53,7 @@ a {
 .showcase {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 0 0;
+    margin: 70px 0 70px 0;
     column-gap: 10px;
 }
 
@@ -58,8 +61,23 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 0;
+    row-gap: 15px;
+}
+.showcase_left h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
 }
 
+.showcase p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.showcase_left h1, .showcase_left p {
+    margin: 0;
+}
+ 
 button {
     align-self: flex-end;
     padding: 5px 15px;
@@ -76,7 +94,6 @@ button a {
     display: flex;
     flex: 1 1 0;
     align-content: flex-start;
-
 }
 
 .showcase_left > * {
