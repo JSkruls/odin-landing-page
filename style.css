@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
 .page_wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    background: #1f2937;
-}
-
-.page_wrapper > * {
-    width: 80%;
 }
 
 /* HEADER */
@@ -103,4 +103,48 @@ button a {
 img {
     height: 100%;
     width: 100%;
+}
+
+.darkside {
+    background: #1f2937;
+    width: 100%;
+    padding: 0 10%;
+}
+
+/*INFO*/
+.information {
+    width: 100%;
+}
+
+.information h1 {
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.image_container img {
+    border: 3px solid #3882f6;
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 160px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #000;
+    font-size: 16px;
 }
