@@ -1,0 +1,1 @@
+#learn and impelement symantic html elements (aside, nav, header etc.) instead of using "div class".
